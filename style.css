@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    background-color: rgb(0, 140, 255);
+    user-select: none;
+    /* border: 1px solid red; */
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+
+}
+h1{
+    margin-bottom: 0.5em;
+    color: white;
+}
+p{
+    margin: 0.5em;
+    color: white;
+}
+.container{
+    height: 50%;
+    width: 10%;
+    border: 5px solid #ddd;
+    border-radius: 0 0 3em 3em;
+    display: flex;
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+.remaining{
+    position: absolute;
+    width: 100%;
+    background-color: #ddd;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    transition: height 0.3s ease-in;
+
+}
+.completed{
+    background-color: rgb(0, 68, 255);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 0%;
+    transition: height 0.3s ease;
+
+}
+.cups{
+    display: flex;
+    flex-wrap: wrap;
+    height: 30%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.cup{
+    font-size: 0.7em;
+    margin: 1em;
+    height: 50%;
+    width: 5%;
+    border: 5px solid #ddd;
+    border-radius: 0 0 2em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: aliceblue;
+
+}
+.cup-selected{
+    background-color: rgb(0, 153, 255);
+    transition: background-color 0.3s ease;
+}
+
+.reset{
+    /* height: 2em; */
+    background-color: white;
+    border-radius: 1em;
+    outline: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+
+}
